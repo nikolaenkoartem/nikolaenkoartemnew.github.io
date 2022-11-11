@@ -1,0 +1,121 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background: #fff;
+    z-index: 1001;
+}
+
+.preloader__image {
+    position: relative;
+    top: 50%;
+    left: calc(50% - 32px);
+    width: 128px;
+    height: 128px;
+    margin-top: -32px;
+    margin-left: -32px;
+    background: url(../img/Preloader.gif) no-repeat 50% 50%;
+    /*расположение (url) изображения gif и др. параметры*/
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    flex-basis: 70vw;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.logo {
+    flex: 2;
+}
+
+.katalog, .search {
+    flex: 1;
+}
+
+#karamel {
+    height: 50px;
+    width: 50px;
+}
+
+#tr {
+    width: 12px;
+    height: 6px;
+    text-align: center;
+}
+
+.logo2 {
+    text-align: center;
+}
+
+#sear {
+width: 230px;
+height: 36px;
+left: 990px;
+top: 57px;
+
+/* shadow */
+
+box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+}
+
+#sear::placeholder {
+position: relative;
+width: 47px;
+height: 36px;
+left: 15px;
+text-align: center;
+
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 36px;
+/* identical to box height, or 225% */
+
+
+color: #999999;
+}
+
+.katalog {
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 50px;
+/* identical to box height, or 250% */
+
+
+color: #000000;
+
+}
+
+.logo {
+font-family: 'Nunito';
+font-style: normal;
+font-weight: 700;
+font-size: 28px;
+line-height: 50px;
+/* identical to box height, or 179% */
+
+
+color: #000000;
+}
