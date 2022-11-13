@@ -157,10 +157,9 @@ body {
 }
 
 .t1 {
-  width: 42%;
-  padding-top: 70px;
-  padding-left: 220px;
-  padding-bottom: 40px;
+  max-width: 1000px;
+  padding: 70px 0 40px;
+  margin: 0 auto;
   /* font-family: 'Nunito';
   font-style: normal; */
   font-weight: 500;
@@ -169,8 +168,8 @@ body {
 }
 
 .t2 {
-  width: 65%;
-  padding-left: 220px;
+  max-width: 1000px;
+  margin: 0 auto;
   /* font-family: 'Nunito';
   font-style: normal; */
   font-weight: 300;
@@ -178,49 +177,25 @@ body {
   line-height: 40px;
 }
 
-@media only screen and (max-width: 1370px) {
+@media only screen and (max-width: 1080px) {
   .t1 {
-    width: 55%;
-    padding-top: 60px;
-    padding-left: 170px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 35px;
+    line-height: 40px;
   }
 
   .t2 {
-    width: 75%;
-    padding-left: 170px;
-  }
-}
-
-@media only screen and (max-width: 1142px) {
-  .t1 {
-    width: 60%;
-    padding-top: 55px;
-    padding-left: 130px;
-    font-size: 40px;
-    line-height: 45px;
-  }
-
-  .t2 {
-    width: 75%;
-    padding-left: 130px;
-    line-height: 35px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 25px;
+    line-height: 30px;
     font-weight: 200;
   }
 }
 
-@media only screen and (max-width: 1000px) {
-  .t1, .t2 {
-    padding-left: 100px;
-  }
-}
-
 @media only screen and (max-width: 831px) {
-  .t1, .t2 {
-    padding-left: 80px;
-  }
-
   .t1 {
-    width: 70%;
     font-size: 30px;
   }
 
@@ -230,12 +205,7 @@ body {
 }
 
 @media only screen and (max-width: 576px) {
-  .t1, .t2 {
-    padding-left: 50px;
-  }
-
   .t1 {
-    width: 75%;
     padding-top: 40px;
     padding-bottom: 30px;
     font-size: 25px;
@@ -243,22 +213,18 @@ body {
   }
 
   .t2 {
-    width: 80%;
     font-size: 17px;
     line-height: 30px;
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 440px) {
   .header {
     min-height: 300px;
   }
 
-  .t1, .t2 {
-    padding-left: 25px;
-  }
-
   .t1 {
+    padding-left: 25px;
     padding-top: 25px;
     padding-bottom: 20px;
     font-size: 22px;
@@ -266,14 +232,16 @@ body {
   }
 
   .t2 {
+    padding-left: 25px;
     font-size: 15px;
     line-height: 25px;
   }
 }
 
 .heading {
-  padding-top: 80px;
-  padding-left: 220px;
+  max-width: 1000px;
+  padding: 80px 40px 0;
+  margin: 0 auto;
   color: #000;
   /* font-family: 'Nunito';
   font-style: normal; */
@@ -301,11 +269,11 @@ body {
 }
 
 .products {
-  margin-top: 50px;
+  max-width: 1000px;
+  padding: 0 40px 80px;
+  margin: 50px auto 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  /* grid-template-columns: 1fr 1fr 1fr; */
-  padding: 0 220px 80px;
   row-gap: 35px;
   column-gap: 80px;
 }
@@ -334,14 +302,15 @@ body {
 }
 
 .products .str {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 30px 15px 30px;
 }
 
 .products .prt2 {
   /* font-family: 'Nunito';
   font-style: normal; */
-  /* max-width: 100px; */
-  padding-right: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -372,28 +341,24 @@ body {
 
 @media only screen and (max-width: 1440px) {
   .products {
-    padding: 0 150px 80px;
     column-gap: 50px;
   }
 }
 
 @media only screen and (max-width: 1240px) {
   .products {
-    padding: 0 100px 80px;
     column-gap: 40px;
   }
 }
 
 @media only screen and (max-width: 1120px) {
   .products {
-    padding: 0 60px 80px;
     column-gap: 20px;
   }
 }
 
 @media only screen and (max-width: 1000px) {
   .products {
-    padding: 0 auto 80px;
     column-gap: 70px;
     justify-items: center;
   }
@@ -401,32 +366,35 @@ body {
 
 @media only screen and (max-width: 750px) {
   .products {
-    padding: 0 40px 80px;
     column-gap: 40px;
   }
 }
 
 @media only screen and (max-width: 680px) {
   .products {
-    padding: 0 30px 80px;
     column-gap: 30px;
   }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 375px) {
   .products {
-    padding: 0 20px 80px;
+    padding: 0 25px 80px;
     column-gap: 30px;
   }
+}
+
+.footermain {
+  height: 180px;
+  background: #DD033C;
 }
 
 .footer {
-  /* width: screen; */
-  height: 180px;
-  padding: 0 220px;
-  background: #DD033C;
+  max-width: 1000px;
+  padding: 0 40px;
+  margin: 0 auto;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
+  /* align-content: center; */
   justify-content: space-between;
 }
 
@@ -447,7 +415,6 @@ body {
 .footer .leftfoot {
   width: 305px;
   column-gap: 35px;
-  /* row-gap: 20px; */
   justify-content: space-between;
 }
 
@@ -466,73 +433,26 @@ body {
   scale: 1.2
 }
 
-@media only screen and (max-width: 1200px) {
-  .footer {
-    padding: 0 100px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .footer {
-    padding: 0 90px;
-  }
-
+@media only screen and (max-width: 540px) {
   .footer p {
     font-size: 17px;
     line-height: 30px;
-    color: #FFF;
   }
 
   .footer .leftfoot {
-    width: 280px;
+    width: 270px;
   }
 }
 
-@media only screen and (max-width: 700px) {
-  .footer {
-    padding: 0 60px;
-  }
-
-  .footer p {
-    font-size: 15px;
-    line-height: 25px;
-    color: #FFF;
-  }
-
-  .footer .leftfoot {
-    width: 250px;
-  }
-}
-
-@media only screen and (max-width: 550px) {
-  .footer {
-    padding: 0 30px;
-  }
-
-  .footer p {
-    font-size: 15px;
-    line-height: 25px;
-    color: #FFF;
-  }
-
-  .footer .leftfoot {
-    width: 240px;
-  }
-}
-
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 489px) {
   .footer {
     flex-wrap: wrap;
-    padding: 0 30px;
-    align-content: center;
-    justify-content: space-between;
   }
   
   .footer .leftfoot {
     width: 450px;
-    column-gap: 100px;
+    column-gap: 80px;
     padding-bottom: 30px;
-    /* row-gap: 20px; */
     justify-content: space-between;
   }
   
@@ -544,8 +464,12 @@ body {
   }
 }
 
-@media only screen and (max-width: 357px) {
+@media only screen and (max-width: 384px) {
+  .footer {
+    padding: 0 25px;
+  }
+  
   .footer .leftfoot {
-    column-gap: 60px;
+    column-gap: 40px;
   }
 }
