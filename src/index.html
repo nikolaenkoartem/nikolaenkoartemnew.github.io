@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Language" content="ru">
+    <meta name="generator" content="N/A">
+    <meta name="language" content="Russian">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <meta name="theme-color" content="#FFFFFF">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-navbutton-color" content="#FFFFFF">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#FFFFFF">
+
+    <link type="text/css" rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="body">
+        <div class="menu">
+            <div class="left">
+                <img src="./imgs/logo.png" alt="">
+                <p>CandyShop</p>
+            </div>
+
+            <div class="right">
+                <div class="catalog">
+                    <p>Каталог</p>
+                    <img src="./imgs/arrow.svg" alt="">
+                </div>
+
+                <div class="search">
+                    <input type="text" value="" placeholder="Поиск">
+                    <img src="./imgs/search.svg" alt="" id="button">
+                </div>
+
+                <script>
+                    const button = document.querySelector("#button");
+
+                    button.addEventListener("click", () => {
+                        alert("CLICKED");
+                    });
+                </script>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="t1">
+                <p>Сладости из<br>Америки, Европы и Азии</p>
+            </div>
+
+            <div class="t2">
+                <p>Заходите в наш онлайн-каталог и побалуйте себя вкусняшками, 
+                    которые пробовали в путешествии за границей, 
+                    но которых нет в обычных сетевых супермаркетах!</p>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="heading">
+                <p>Хиты продаж</p>
+            </div>
+
+            <div class="products">
+                <div class="pr">
+                    <img src="./imgs/prd1.png" alt="">
+                    <div class="prt1">
+                        <p>Кислые конфеты Toxic Waste желтые</p>
+                    </div>
+                    <div class="str">
+                        <div class="prt2">
+                            <p>199 руб.</p>
+                        </div>
+                        <input type="button" value="Купить">
+                    </div>
+                </div>
+
+                <div class="pr">
+                    <img src="./imgs/prd2.png" alt="">
+                    <div class="prt1">
+                        <p>Конфеты Bertie Botts Beans Jelly Belly</p>
+                    </div>
+                    <div class="str">
+                        <div class="prt2">
+                            <p>319 руб.</p>
+                        </div>
+                        <input type="button" value="Купить">
+                    </div>
+                </div>
+
+                <div class="pr">
+                    <img src="./imgs/prd3.png" alt="">
+                    <div class="prt1">
+                        <p>Jelly Belly Bean Boozled 5 (Бин Бузлд) 20 вкусов</p>
+                    </div>
+                    <div class="str">
+                        <div class="prt2">
+                            <p>269 руб.</p>
+                        </div>
+                        <input type="button" value="Купить">
+                    </div>
+                </div>
+
+                <div class="pr">
+                    <img src="./imgs/prd4.png" alt="">
+                    <div class="prt1">
+                        <p>Pringles Mystery flavour</p>
+                    </div>
+                    <div class="str">
+                        <div class="prt2">
+                            <p>399 руб.</p>
+                        </div>
+                        <input type="button" value="Купить">
+                    </div>
+                </div>
+
+                <div class="pr">
+                    <img src="./imgs/prd5.png" alt="">
+                    <div class="prt1">
+                        <p>Готовый завтрак Lucky Charms Fruity</p>
+                    </div>
+                    <div class="str">
+                        <div class="prt2">
+                            <p>1 590 руб.</p>
+                        </div>
+                        <input type="button" value="Купить">
+                    </div>
+                </div>
+
+                <div class="pr">
+                    <img src="./imgs/prd6.png" alt="">
+                    <div class="prt1">
+                        <p>Pocky Almond crush с миндалем</p>
+                    </div>
+                    <div class="str">
+                        <div class="prt2">
+                            <p>159 руб.</p>
+                        </div>
+                        <input type="button" value="Купить">
+                    </div>
+                </div>
+
+                <div class="pr">
+                    <img src="./imgs/prd7.png" alt="">
+                    <div class="prt1">
+                        <p>Harry Potter Knight Bus</p>
+                    </div>
+                    <div class="str">
+                        <div class="prt2">
+                            <p>2 119 руб.</p>
+                        </div>
+                        <input type="button" value="Купить">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="leftfoot">
+                <div class="catalogfoot">
+                    <p>Каталог</p>
+                </div>
+
+                <div class="delivery">
+                    <p>Доставка и оплата</p>
+                </div>
+
+                <div class="contacts">
+                    <p>Контакты</p>
+                </div>
+
+                <div class="offer">
+                    <p>Публичная оферта</p>
+                </div>
+            </div>
+
+            <div class="rightfoot">
+                <img src="./imgs/vk.svg" alt="" id="Vk">
+
+                <img src="./imgs/inst.svg" alt="" id="Inst">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
